@@ -3,8 +3,8 @@ private/
 restricted/
 checkpoints/
 outputs/private/
-reproduced_figures/
-synthetic/example_output/
+paper_repro/reproduced_figures/
+paper_repro/synthetic/example_output/
 *.parquet
 *.feather
 *.arrow

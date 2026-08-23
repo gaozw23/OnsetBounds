@@ -15,4 +15,4 @@ Hashes below are SHA-256 values from the completed private analysis. Paths are l
 | eICU E4 TEST-open record | `3f63707f17fbb0fff18b57264bb5896dc8366a52cadb70533756851f57d31aa8` |
 | Final bootstrap lock (shared final expansion) | `a9335f5f768459276a7e2834aefd2b78f7824cd8adab04ed4244a553a6afdedd` |
 
-The final manuscript aggregate-source file hashes are recorded file by file in `results/aggregate/PUBLIC_AGGREGATE_DATA_MANIFEST.csv`; the public hashes must equal their verified private source hashes.
+The final manuscript aggregate-source file hashes are recorded file by file in `paper_repro/aggregate/PUBLIC_AGGREGATE_DATA_MANIFEST.csv`; the public hashes must equal their verified private source hashes.

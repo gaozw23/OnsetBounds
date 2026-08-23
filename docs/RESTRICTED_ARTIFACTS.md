@@ -11,4 +11,4 @@ The public freeze excludes all raw MIMIC-IV/eICU records and these patient-deriv
 - bootstrap draw/checkpoint files and TEST-open records containing restricted paths;
 - virtual environments, logs, transcripts, caches, temporary renders, and LaTeX auxiliaries.
 
-These exclusions prevent redistribution of controlled data and reduce re-identification and model-inversion risk. Public CSVs are aggregate manuscript sources listed in `results/aggregate/PUBLIC_AGGREGATE_DATA_MANIFEST.csv`.
+These exclusions prevent redistribution of controlled data and reduce re-identification and model-inversion risk. Public CSVs are aggregate manuscript sources listed in `paper_repro/aggregate/PUBLIC_AGGREGATE_DATA_MANIFEST.csv`.

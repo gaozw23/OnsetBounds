@@ -5,7 +5,7 @@
 1. Use Python 3.12 and install `.[simulation,dev]`.
 2. Run `python -m pytest -q`.
 3. Run the synthetic example.
-4. Rebuild the five figures from `results/aggregate/figure_data`.
+4. Rebuild the five figures from `paper_repro/aggregate/figure_data`.
 
 These steps do not access MIMIC-IV or eICU and do not reproduce patient-level analyses.
 
