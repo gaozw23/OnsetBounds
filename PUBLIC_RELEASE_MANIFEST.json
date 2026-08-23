@@ -13,7 +13,8 @@
     "secrets": "NOT FOUND",
     "absolute_local_paths": "NOT FOUND"
   },
-  "license_status": "REVIEW_REQUIRED",
+  "license_status": "MIT",
+  "ready_to_create_github_remote": true,
   "git": {
     "initial_commit": "SELF: resolve with git rev-parse HEAD",
     "tag": "v1.0.0-submission",

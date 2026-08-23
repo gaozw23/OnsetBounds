@@ -28,6 +28,8 @@ The frozen applications used MIMIC-IV 3.1 and the eICU Collaborative Research Da
 
 Aggregate manuscript sources are under `results/aggregate`; all five figures can be rebuilt without private data. Elastic Net, XGBoost, and Trend are evaluation vehicles. Robust ranking remained unresolved. No MIMIC-to-eICU coefficient transport was reported because exact semantic compatibility was unsupported.
 
-## Citation and license review
+## Citation and license
 
-Use `CITATION.cff` for citation metadata. Repository licensing is intentionally marked `REVIEW_REQUIRED`; see `LICENSE_REVIEW_REQUIRED.md` and `docs/THIRD_PARTY_NOTICES.md` before public release.
+Use `CITATION.cff` for citation metadata. The project source code is released under the MIT License; see `LICENSE`.
+
+Third-party packages remain under their respective upstream licenses. MIMIC-IV and eICU data are not redistributed and remain subject to PhysioNet credentialing and data-use terms; see `docs/THIRD_PARTY_NOTICES.md`.
