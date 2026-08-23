@@ -1,0 +1,24 @@
+windows_hours: [6, 12, 24]
+continuous_measurements:
+  - heart_rate
+  - map
+  - respiratory_rate
+  - temperature
+  - spo2
+  - creatinine
+  - bun
+  - potassium
+  - bicarbonate
+  - lactate
+derived:
+  - last
+  - time_since_last_hours
+  - mean
+  - min
+  - max
+  - count
+  - net_change
+  - slope
+binary_status:
+  - vasopressor_status
+  - invasive_ventilation_status

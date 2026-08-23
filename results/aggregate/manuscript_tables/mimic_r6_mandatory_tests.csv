@@ -1,0 +1,22 @@
+test_number,test_name,status,detail
+1,R5 status gate,PASS,locked before TEST
+2,TEST open record,PASS,85a13268b5ce8faad66777a155f55b2854f51912bec46cdb163a27cb83f6257c
+3,anchor group,PASS,{'2020 - 2022'}
+4,finite-bracket modeling rule,PASS,4020
+5,15 policy rows per patient,PASS,60300
+6,no alert at/after U,PASS,checked during alert construction
+7,valid endpoint order,PASS,15
+8,premature endpoint order,PASS,15
+9,late_missed endpoint order,PASS,15
+10,ppv endpoint order,PASS,15
+11,utility endpoint order,PASS,15
+12,probability natural range,PASS,nonnegative
+13,direct paired subset marginal,PASS,3
+14,assumption summaries contained,PASS,12
+15,bootstrap count,PASS,1000
+16,bootstrap valid at least 95%,PASS,1.0
+17,bootstrap no refit,PASS,stored patient contributions only
+18,feature schema,PASS,489 frozen columns
+19,score manifest,PASS,all partitions
+20,all model targets,PASS,15
+21,protected R1-R3.5 trees unchanged,PASS,"{'r1': True, 'r2': True, 'r3': True, 'r3_5': True}"

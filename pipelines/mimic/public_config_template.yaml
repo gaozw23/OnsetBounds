@@ -1,0 +1,9 @@
+database:
+  version: "MIMIC-IV 3.1"
+  root: "${MIMIC_IV_ROOT}"
+output:
+  root: "${ONSETBOUNDS_OUTPUT_ROOT}"
+analysis:
+  lead_window_hours: [6, 24]
+  alert_rule: "score > c"
+  frozen_train_constants: "${MIMIC_FROZEN_TRAIN_CONSTANTS}"

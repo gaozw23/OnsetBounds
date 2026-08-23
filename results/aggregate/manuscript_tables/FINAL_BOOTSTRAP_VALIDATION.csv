@@ -1,0 +1,4 @@
+database,scheme,valid,total
+MIMIC,patient,5000,5000
+eICU,two_stage_hospital_patient,5000,5000
+eICU,conditional_on_observed_hospitals,1000,1000

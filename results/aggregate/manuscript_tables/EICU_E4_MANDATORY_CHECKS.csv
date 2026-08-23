@@ -1,0 +1,18 @@
+test_number,test_name,status,detail
+1,TEST open record precedes TEST outputs,PASS,3f63707f17fbb0fff18b57264bb5896dc8366a52cadb70533756851f57d31aa8
+2,all upstream hashes exact,PASS,4
+3,no model refit,PASS,frozen artifacts only
+4,no threshold reselection,PASS,15 frozen thresholds
+5,TEST preprocessing uses TRAIN constants only,PASS,E2 locks
+6,no event row at or after U,PASS,enforced in feature worker and alert stage
+7,strict first-alert rule,PASS,scores > threshold
+8,primary lead window 6/24,PASS,"single_policy_bounds(...,6,24)"
+9,direct paired bounds shared onset,PASS,3
+10,MI estimates inside sharp bounds,PASS,12
+11,retesting quartiles frozen before performance,PASS,E1 lock
+12,two-stage bootstrap correct,PASS,hospital then patient
+13,conditional bootstrap separate,PASS,fixed hospitals
+14,bootstrap valid at least 95%,PASS,1.000/1.000
+15,no NaN/Inf in final reported results,PASS,"(15, 17)"
+16,restricted IDs absent from shareable outputs,PASS,[]
+17,MIMIC unchanged,PASS,frozen aggregate artifacts

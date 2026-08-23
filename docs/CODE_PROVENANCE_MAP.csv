@@ -1,0 +1,10 @@
+public_module,source_project_path,final_analysis_stage,artifact_or_manifest_reference,statistical_role,copied_or_refactored,behavior_changed,tests_covering_module
+src/onsetbounds/bounds.py,src/onsetbounds/geometry.py,"Simulation; MIMIC R6; eICU E4",final manuscript equations,sharp single-policy geometry,REFACTORED,NO,tests/test_bounds.py;tests/test_validation.py
+src/onsetbounds/paired.py,src/onsetbounds/geometry.py,"Simulation; MIMIC R6; eICU E4",final paired result tables,direct shared-onset comparison,REFACTORED,NO,tests/test_paired.py
+src/onsetbounds/inference.py,real_data/mimic_r6/src/mimic_r6_analysis.py,"MIMIC R6; eICU E4",final primary tables,patient contributions and aggregation,REFACTORED,NO,tests/test_inference.py
+src/onsetbounds/bootstrap.py,"src/onsetbounds/inference.py; real_data/eicu_e4/src/eicu_e4.py; real_data/final_bootstrap/src/final_bootstrap_expansion.py",final bootstrap expansion,FINAL_BOOTSTRAP_LOCK.json,patient and hospital/patient outer inference,REFACTORED,NO,tests/test_bootstrap.py
+src/onsetbounds/metrics.py,"real_data/mimic_r5/src/mimic_r5.py; real_data/eicu_e3/src/eicu_e3.py","MIMIC R4-R5; eICU E3",model and policy locks,weighted AP and strict thresholds,REFACTORED,NO,tests/test_metrics.py
+src/onsetbounds/utility.py,real_data/mimic_r6/src/mimic_r6_analysis.py,"MIMIC R6; eICU E4",primary utility tables,bounded utility extrema,REFACTORED,NO,tests/test_inference.py
+pipelines/mimic,real_data/mimic_r1 through mimic_r6,MIMIC final freeze,MIMIC_FINAL_FREEZE_MANIFEST.json,portable authorized-data interfaces,REFACTORED,NO,tests/test_synthetic_pipeline.py
+pipelines/eicu,real_data/eicu_e0 through eicu_e4,eICU final freeze,EICU E2/E3/E4 locks,portable authorized-data interfaces,REFACTORED,NO,tests/test_synthetic_pipeline.py
+figures/build_figures.py,"src/onsetbounds/paper_outputs.py; literature/submission_hotfix_v2/build_final_figures.py",final manuscript assembly,PUBLIC_AGGREGATE_DATA_MANIFEST.csv,aggregate-only five-figure builder,REFACTORED,NO,figure reproduction audit

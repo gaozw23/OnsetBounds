@@ -1,0 +1,12 @@
+seed: 8142026
+patients: 240
+bootstrap_replicates: 200
+event_prevalence: 0.30
+lead_window_hours: [6, 24]
+policies:
+  - name: EARLY
+    alert_shift_hours: 14
+  - name: MID
+    alert_shift_hours: 10
+  - name: LATE
+    alert_shift_hours: 4

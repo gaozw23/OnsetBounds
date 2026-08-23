@@ -1,0 +1,10 @@
+database:
+  version: "eICU Collaborative Research Database 2.0"
+  root: "${EICU_ROOT}"
+output:
+  root: "${ONSETBOUNDS_OUTPUT_ROOT}"
+analysis:
+  lead_window_hours: [6, 24]
+  alert_rule: "score > c"
+  hospital_bootstrap: "two-stage hospital/patient"
+  frozen_train_constants: "${EICU_FROZEN_TRAIN_CONSTANTS}"

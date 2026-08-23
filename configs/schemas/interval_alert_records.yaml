@@ -1,0 +1,10 @@
+required_columns:
+  event: boolean
+  evaluable: boolean
+  lower: number_or_null
+  upper: number_or_null
+  alert: number_or_positive_infinity
+conventions:
+  onset_interval: "closed [lower, upper]"
+  valid_window: "closed [alert + 6, alert + 24]"
+  no_alert: "+infinity"

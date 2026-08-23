@@ -1,0 +1,2 @@
+candidate,clinical_exclusions,eligible,final_modeling_patients,final_sha256,finite_bracket_events,non_events,operational_events,outcome_supported,primary_evaluable_events,scan_metrics,status
+8716,323,5136,4020,bf1b677c635bda2d6e95d63ebe47c5e90e4da484362d19d5417e71437507b765,264,3756,338,4094,221,"{'accepted_item_rows_in_full_labevents': 4320364, 'exact_duplicate_rows_collapsed': 0, 'matching_row_parse_failures': 0, 'sample_distinct_source_rows': 41564, 'sample_raw_creatinine_rows_in_icu_window': 41564}",COMPLETE

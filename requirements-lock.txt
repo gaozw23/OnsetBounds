@@ -1,0 +1,10 @@
+# Minimal clean public environment aligned with the frozen analysis environment.
+numpy==2.5.2
+pandas==2.3.3
+scipy==1.18.0
+scikit-learn==1.9.0
+xgboost==3.3.0
+matplotlib==3.11.1
+PyYAML==6.0.3
+pytest==9.1.1
+setuptools==84.0.0

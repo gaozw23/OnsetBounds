@@ -1,0 +1,10 @@
+mimic_iv_3_1:
+  table: hosp/labevents
+  accepted_blood_chemistry_itemids: [50912, 52546]
+  accepted_units:
+    mg/dL: 1.0
+    umol/L: 0.011312217194570135
+eicu_2_0:
+  table: lab
+  labname_pattern: "creatinine"
+notes: "Dictionary identifiers and conversion rules only; no source rows are included."

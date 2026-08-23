@@ -1,0 +1,5 @@
+seed: 20250308
+replications: 100
+n: 500
+event_prevalence: 0.10
+interval_width_hours: 12.0
