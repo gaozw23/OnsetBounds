@@ -1,18 +1,39 @@
 # Reproducibility
 
-## Public, no-data workflow
+## Public workflow
 
-1. Use Python 3.12 and install `.[simulation,dev]`.
-2. Run `python -m pytest -q`.
-3. Run the synthetic example.
-4. Rebuild the five figures from `paper_repro/aggregate/figure_data`.
+Use Python 3.12 and install the simulation and development dependencies:
 
-These steps do not access MIMIC-IV or eICU and do not reproduce patient-level analyses.
+```bash
+python -m pip install -e ".[simulation,dev]"
+```
 
-## Authorized real-data workflow
+Run the public test suite:
 
-The frozen stage order was: cohort and interval construction; hourly features using TRAIN-only constants; model selection on TRAIN/VALIDATION; threshold selection on VALIDATION non-events using strict `score > c`; TEST opening; patient-level contributions and point bounds; bootstrap inference; aggregate reporting. Exact locks are listed in `ANALYSIS_LOCKS.md`.
+```bash
+python -m pytest -q
+```
 
-The public pipeline modules expose statistical rules and portable interfaces. They intentionally omit fitted models, coefficient vectors, imputation/scaling arrays, thresholds, TEST records, and bootstrap draws. Those objects must not be inferred from public aggregate output.
+Run the synthetic example:
 
-The frozen environment used Python 3.12.13, NumPy 2.5.2, SciPy 1.18.0, pandas 2.3.3, scikit-learn 1.9.0, XGBoost 3.3.0, Matplotlib 3.11.1, and PyYAML 6.0.3. Final bootstrap counts were MIMIC patient 5000/5000, eICU two-stage hospital/patient 5000/5000, and eICU conditional-on-observed-hospitals 1000/1000.
+```bash
+python paper_repro/synthetic/generate_synthetic_example.py --config paper_repro/synthetic/example_config.yaml --output paper_repro/synthetic/example_output
+```
+
+The small public simulation runner can be invoked with:
+
+```bash
+python scripts/simulation/run_simulation.py --config scripts/simulation/configs/example.yaml --output simulation_example.csv
+```
+
+It illustrates the package interface; the completed manuscript simulation results are supplied as aggregate files under `paper_repro/aggregate/`.
+
+Rebuild the manuscript figures from aggregate data:
+
+```bash
+python paper_repro/build_figures.py --input paper_repro/aggregate/figure_data --output paper_repro/reproduced_figures
+```
+
+## Clinical data workflow
+
+The [MIMIC-IV](../scripts/mimic/README.md) and [eICU](../scripts/eicu/README.md) modules provide portable interfaces for authorized local data. Raw databases, patient-level derived records, fitted objects, and bootstrap draws are not included. See [DATA_ACCESS.md](DATA_ACCESS.md) for access requirements and [PROVENANCE.md](PROVENANCE.md) for the code version associated with the reported results.
