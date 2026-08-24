@@ -1,10 +1,14 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the accompanying manuscript."
-title: "Sharp Performance Bounds for Clinical Early-Warning Systems with Interval-Uncertain Event Onset"
+title: "Sharp performance bounds for clinical early-warning systems with interval-uncertain event onset: a partial-identification framework"
 type: software
 authors:
   - family-names: Gao
     given-names: Zhuowei
-    affiliation: "Department of Statistics, Jilin University"
+    affiliation: "School of Mathematics, Jilin University"
+  - family-names: Sun
+    given-names: Weipeng
+    affiliation: "School of Mathematics, Jilin University"
 version: 1.0.0
 date-released: 2026-08-24
+repository-code: "https://github.com/gaozw23/OnsetBounds"

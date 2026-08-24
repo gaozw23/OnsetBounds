@@ -1,9 +1,9 @@
 # OnsetBounds
 
 Code and reproducibility materials accompanying the manuscript
-*Sharp Performance Bounds for Clinical Early-Warning Systems with Interval-Uncertain Event Onset*
-by Zhuowei Gao,
-Department of Statistics, Jilin University, Changchun, China.
+*Sharp performance bounds for clinical early-warning systems with interval-uncertain event onset: a partial-identification framework*
+by Zhuowei Gao and Weipeng Sun,
+School of Mathematics, Jilin University.
 
 ## Overview
 
@@ -32,7 +32,7 @@ Tag:
 
 `v1.0.0-submission`
 
-That commit is preserved permanently. Subsequent commits are limited to repository presentation, documentation, and path organization and do not alter the audited statistical implementation.
+That commit and tag are preserved permanently. Subsequent repository commits may contain documentation, provenance, and presentation updates only; they do not change the statistical implementation used for the reported results.
 
 ## Repository structure
 
@@ -98,9 +98,11 @@ Manuscript figures can be rebuilt from the public aggregate data under [`paper_r
 
 The public tests cover single-policy bounds, paired bounds, bootstrap and inference utilities, weighted average precision, and the synthetic pipeline.
 
+Table S12 of the accompanying manuscript lists 21 logical implementation requirements. The public suite contains 17 pytest functions, and one function may cover more than one logical requirement. [`docs/TEST_CASE_MAPPING.csv`](docs/TEST_CASE_MAPPING.csv) distinguishes direct, partial, indirect, and not-directly-covered requirements without claiming 21 standalone tests.
+
 ## Citation
 
-Please cite *Sharp Performance Bounds for Clinical Early-Warning Systems with Interval-Uncertain Event Onset* by Zhuowei Gao. Machine-readable citation metadata are provided in [`CITATION.cff`](CITATION.cff).
+Please cite *Sharp performance bounds for clinical early-warning systems with interval-uncertain event onset: a partial-identification framework* by Zhuowei Gao and Weipeng Sun, School of Mathematics, Jilin University. Machine-readable citation metadata are provided in [`CITATION.cff`](CITATION.cff).
 
 ## License
 

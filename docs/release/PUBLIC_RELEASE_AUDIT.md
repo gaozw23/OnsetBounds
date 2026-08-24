@@ -1,47 +1,43 @@
-# OnsetBounds local public-release freeze
+# OnsetBounds public-release status
 
-STATUS = PUBLIC_REPOSITORY_LOCAL_FREEZE_COMPLETE
+STATUS = PUBLIC_REPOSITORY_REMOTE_RELEASE_CURRENT
 
-PUBLIC_DIRECTORY = repository root containing this file
+REPOSITORY_URL = https://github.com/gaozw23/OnsetBounds
 
-FILES_TRACKED = recorded by local Git at freeze
+REMOTE_CREATED = YES
 
-TOTAL_TRACKED_SIZE_MB = recorded by local Git at freeze
+PUSH_PERFORMED = YES
 
-UNIT_TESTS_PASSED = 17/17
+VISIBILITY = PUBLIC
 
-SYNTHETIC_EXAMPLE_PASSED = YES
+STATISTICAL_FREEZE_COMMIT = 6df6e4b7679a4dcfcd9ddf17b9e5a7f9dab2d097
 
-FIGURE_REPRODUCTION_PASSED = ASSETS_CONFIRMED_NOT_RERUN
+STATISTICAL_FREEZE_TAG = v1.0.0-submission
 
-RESTRICTED_PATIENT_DATA_FOUND = NO
-
-EMBEDDED_PATIENT_IDENTIFIERS_FOUND = NO
-
-SECRETS_FOUND = NO
-
-ABSOLUTE_LOCAL_PATHS_FOUND = NO
-
-UNEXPLAINED_LARGE_FILES_FOUND = NO
+RELEASE_URL = https://github.com/gaozw23/OnsetBounds/releases/tag/v1.0.0-submission
 
 LICENSE_STATUS = MIT
 
-INITIAL_COMMIT_CREATED = YES
+PYTEST_FUNCTIONS = 17
 
-INITIAL_COMMIT_SHA = SELF (resolve with `git rev-parse HEAD`)
+LOGICAL_MANDATORY_CASES = 21
 
-LOCAL_TAG_CREATED = v1.0.0-submission
+TEST_MAPPING_STATUS = PARTIAL_DIRECT_COVERAGE_DISCLOSED
 
-REMOTE_CREATED = NO
+MIMIC_PRIMARY_BOOTSTRAP = 5000/5000
 
-PUSH_PERFORMED = NO
+EICU_PRIMARY_TWO_STAGE_BOOTSTRAP = 5000/5000
 
-MANUSCRIPT_MICROFIX_COMPLETE = YES
+EICU_CONDITIONAL_BOOTSTRAP = 1000/1000
 
-MAIN_COMPILES = YES
+FINAL_BOOTSTRAP_LOCK_HASH = a9335f5f768459276a7e2834aefd2b78f7824cd8adab04ed4244a553a6afdedd
 
-SUPPLEMENT_COMPILES = YES
+STATISTICAL_ANALYSIS_RERUN = NO
 
 NUMERICAL_RESULTS_CHANGED = NO
 
-READY_TO_CREATE_GITHUB_REMOTE = YES
+The 17 pytest functions and 21 logical requirements are not interchangeable counts. `docs/TEST_CASE_MAPPING.csv` records direct, partial, and absent direct coverage without inventing tests. In particular, the simulated cohort-containment requirement is not a direct public unit test.
+
+The statistical implementation used for the frozen numerical results is identified by the statistical freeze commit and tag above. Later documentation, provenance, and presentation commits do not alter that implementation or its reported numerical results.
+
+Historical pre-remote manifest and audit files are retained under `docs/release/history/` with explicit provenance notices. Their historical state fields remain unchanged.

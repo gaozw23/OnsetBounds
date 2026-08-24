@@ -1,0 +1,22 @@
+supplement_case_number,supplement_requirement,pytest_file,pytest_function,coverage_type,notes
+1,A=infinity no-alert extrema,tests/test_bounds.py,test_no_alert_case,DIRECT,All required extrema are asserted.
+2,Feasible interval wholly inside valid window,tests/test_bounds.py,test_certain_valid_and_boundary_equality,DIRECT,Certain-valid case is asserted.
+3,Partial intersection,tests/test_bounds.py,test_partial_and_no_intersection,DIRECT,Partial-intersection extrema are asserted.
+4,No intersection,tests/test_bounds.py,test_partial_and_no_intersection,DIRECT,No-intersection extrema are asserted.
+5,Equality at both valid-window boundaries,tests/test_bounds.py,test_certain_valid_and_boundary_equality,DIRECT,Closed-boundary validity is asserted.
+6,Point set at upper valid boundary is not premature,tests/test_bounds.py,test_certain_valid_and_boundary_equality,PARTIAL,Valid equality is asserted; the point-set premature indicator is not separately asserted.
+7,Point set at lower valid boundary is not late,tests/test_bounds.py,test_certain_valid_and_boundary_equality,PARTIAL,Valid equality is asserted; the point-set late indicator is not separately asserted.
+8,Identical policies have zero direct contrast,tests/test_paired.py,test_identical_policy_direct_zero,DIRECT,Identical-policy direct extrema are asserted.
+9,"Both unique-policy regions imply [-1,1]",tests/test_paired.py,test_direct_full_minus_one_to_one,DIRECT,Full direct contrast range is asserted.
+10,Feasible set wholly favors policy b,tests/test_paired.py,test_certain_plus_and_minus_one,DIRECT,Minus-one case is asserted.
+11,Feasible set wholly favors policy a,tests/test_paired.py,test_certain_plus_and_minus_one,DIRECT,Plus-one case is asserted.
+12,"Only tie regions imply [0,0]",tests/test_paired.py,test_identical_policy_direct_zero,PARTIAL,Identical windows are a tie-only special case; not every tie-only geometry is separately parameterized.
+13,Refinement monotonicity,tests/test_bounds.py,test_refinement_monotonicity,PARTIAL,Directly asserted for valid-window bounds rather than every bounded outcome.
+14,Analytic versus cell enumeration,tests/test_validation.py,test_analytic_vs_cell_enumeration,PARTIAL,Agreement is asserted on a deterministic grid; the public test does not run 10000 random cases.
+15,Simulated cohort containment,tests/test_synthetic_pipeline.py,test_synthetic_pipeline,NOT_DIRECTLY_COVERED,Pipeline completion is asserted; cohort-level containment is not a direct public pytest assertion.
+16,Direct interval inside marginal subtraction,tests/test_paired.py,test_direct_inside_marginal_subtraction,DIRECT,Inclusion is asserted.
+17,PPV denominator includes every alert,tests/test_inference.py,test_ppv_denominator_is_all_alerts,DIRECT,All-alert denominator behavior is asserted.
+18,Patient-level bootstrap resampling unit,tests/test_bootstrap.py,test_deterministic_patient_bootstrap,PARTIAL,Deterministic object-level resampling is asserted; no hourly-row fixture is included.
+19,Natural-space clipping,tests/test_bootstrap.py,test_natural_space_clipping; test_simultaneous_paired_clipping,DIRECT,Probability and paired-difference clipping are asserted.
+20,Missing or zero denominator explicit status,tests/test_inference.py,test_missing_denominator_status,DIRECT,Undefined status is asserted.
+21,Reproducibility and forbidden future information,tests/test_bootstrap.py; tests/test_synthetic_pipeline.py; tests/test_metrics.py,test_deterministic_patient_bootstrap; test_synthetic_pipeline; test_weighted_ap_tie_grouping; test_strict_threshold_and_first_alert,PARTIAL,Reproducibility and deterministic threshold/first-alert helpers are covered; explicit rejection of post-decision observations is not directly asserted.
