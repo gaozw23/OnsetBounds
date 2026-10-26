@@ -1,0 +1,98 @@
+{
+  "lab_items": {
+    "sodium": [
+      50983,
+      52623
+    ],
+    "potassium": [
+      50971,
+      52610
+    ],
+    "chloride": [
+      50902,
+      52535
+    ],
+    "bicarbonate": [
+      50882
+    ],
+    "bun": [
+      51006,
+      52647
+    ],
+    "creatinine": [
+      50912,
+      52546
+    ],
+    "hemoglobin": [
+      51222
+    ]
+  },
+  "surgical_1": [
+    "CSURG",
+    "NSURG",
+    "ORTHO",
+    "PSURG",
+    "SURG",
+    "TSURG",
+    "VSURG"
+  ],
+  "surgical_0": [
+    "CMED",
+    "MED",
+    "NMED",
+    "OMED",
+    "PSYCH"
+  ],
+  "icu_1": [
+    "Cardiac Vascular Intensive Care Unit (CVICU)",
+    "Coronary Care Unit (CCU)",
+    "Intensive Care Unit (ICU)",
+    "Medical Intensive Care Unit (MICU)",
+    "Medical/Surgical Intensive Care Unit (MICU/SICU)",
+    "Neuro Surgical Intensive Care Unit (Neuro SICU)",
+    "Surgical Intensive Care Unit (SICU)",
+    "Trauma SICU (TSICU)"
+  ],
+  "icu_0": [
+    "Cardiac Surgery",
+    "Cardiology",
+    "Discharge Lounge",
+    "Emergency Department",
+    "Emergency Department Observation",
+    "Hematology/Oncology",
+    "Labor & Delivery",
+    "Med/Surg",
+    "Med/Surg/GYN",
+    "Med/Surg/Trauma",
+    "Medical/Surgical (Gynecology)",
+    "Medicine",
+    "Medicine/Cardiology",
+    "Neurology",
+    "Nursery",
+    "Observation",
+    "Obstetrics (Postpartum & Antepartum)",
+    "Obstetrics Antepartum",
+    "Obstetrics Postpartum",
+    "Oncology",
+    "PACU",
+    "Psychiatry",
+    "Special Care Nursery (SCN)",
+    "Surgery",
+    "Surgery/Pancreatic/Biliary/Bariatric",
+    "Surgery/Trauma",
+    "Thoracic Surgery",
+    "Transplant",
+    "Vascular"
+  ],
+  "ESKD_evidence_codes": {
+    "9": [
+      "5856",
+      "V451",
+      "V4511"
+    ],
+    "10": [
+      "N186",
+      "Z992"
+    ]
+  }
+}

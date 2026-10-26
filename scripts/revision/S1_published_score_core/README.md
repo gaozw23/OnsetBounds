@@ -1,0 +1,11 @@
+# Supplementary Software S1: published-score application core
+
+This contains the unchanged Ugwuowo2020 Box1 formula, the fixed retrospective timeline/event core, laboratory mappings and conversions, two frozen landmark cutoffs, and synthetic tests. No clinical records, cohort results, patient identifiers, alert times, risk trajectories, execution logs, credentials or internal audit directories are included. No remote data access is implemented.
+
+Install numpy/pandas, then run `python -B -m unittest discover -v`. All fixtures are fictitious. Threshold-selection tests use artificial arrays only; they do not repeat VALIDATION calibration. The fixed exploratory cutoff is an operating threshold, not probability recalibration.
+
+`timeline.run_policy` accepts authorized local Lab objects (integer-nanosecond observation and availability times), effective location/service histories and static inputs. Its hospital first15% alert is an intermediate legacy output. For the manuscript landmark policies, use `policy_math.post_scores` and `first_landmark_alert` with the frozen cutoffs; never substitute that hospital first alert. `baseline`/`outcome` construct the separate local doubling target; `event_metrics` uses the same E and fixed first alert for T/U/midpoint. Unknown race/service/location remain unknown under the fixed mapping.
+
+This is a standalone method core, not a source-database extract or one-command recreation of the credentialed cohort. Authorized local MIMIC-IV input preparation and the clinical assumptions are described in Supplementary SectionS13. Patient selection, availability and effective-time assumptions must be respected; these routines do not establish biological onset or original EHR-deployment equivalence. Actual-data outputs need their own disclosure review. Do not replace the locked coefficients, cutoffs or event rules based on new data.
+
+The formula and scientific timeline functions match the accepted internal implementation; only local imports/config loading were made portable. The archive was built with a file allowlist, not by zipping a work directory. The two superseded pilot-ADT tests are excluded; the later interval-state tests are retained. Bibliography: Ugwuowo etal., AJKD2020;76(6):806-814.e1, doi10.1053/j.ajkd.2020.05.003.

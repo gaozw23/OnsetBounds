@@ -50,7 +50,19 @@ Raw MIMIC-IV and eICU data and patient-level derived records are not distributed
 
 ## Code version
 
-The reported numerical results correspond to tag `v1.0.0-submission` and commit `6df6e4b7679a4dcfcd9ddf17b9e5a7f9dab2d097`. Later documentation changes do not alter that statistical implementation. See [docs/PROVENANCE.md](docs/PROVENANCE.md) for the bootstrap provenance.
+Version `1.1.0` (`v1.1.0-jbi-revision`) adds the JBI revision method code below. The frozen submission analyses remain at tag `v1.0.0-submission` and commit `6df6e4b7679a4dcfcd9ddf17b9e5a7f9dab2d097`; their core statistical implementation is unchanged. See [docs/PROVENANCE.md](docs/PROVENANCE.md) for the submission bootstrap provenance.
+
+### JBI revision additions
+
+- [`scripts/revision/bootstrap/`](scripts/revision/bootstrap/): A1 raw-scale bootstrap validation, the three-policy contribution layout, independent-unit oracle moments and uncertainty classification, and the conditional-binomial finite-sample guard for iid patient binary targets. The [fixed synthetic configuration](configs/revision/bootstrap.json) retains the final scenarios, pilot policies, seeds and sampling settings. Geometry and confidence sets call the existing `onsetbounds` functions.
+- [`scripts/revision/clinical_sensitivity.py`](scripts/revision/clinical_sensitivity.py): C1 shared-onset width decomposition, alert concordance and right-endpoint references; C2 early/late onset-location restriction and exact ranking change points; D3 closed lead-window sensitivity at 0–6, 6–12, 6–24 and 6–48 hours. The original primary-evaluable population, brackets and first alerts stay fixed.
+- [`scripts/revision/S1_published_score_core/`](scripts/revision/S1_published_score_core/): Supplementary Software S1, the existing 11-file public method package for the local exploratory application of the published Ugwuowo et al. (2020) AKI score. It includes the formula, retrospective timeline, unit mappings, frozen policy configuration and previously supplied synthetic test sources. It does not establish original hospital deployment equivalence or revalidate the published model's performance.
+
+Install revision dependencies with `python -m pip install -e ".[revision]"`. For A1, add `scripts/revision/bootstrap` to the Python module search path and import `validation.validate_replication`; it accepts the JSON configuration plus independently constructed `(18, 2)` population endpoint and MCSE arrays. `oracle.empty_state`, `add_units` and `estimates` accumulate independent patient units, or hospital-summed contributions for the hospital target. The published files are portable method components; internal production orchestration, checkpoints and result archives are excluded.
+
+The clinical module accepts aligned, authorized local arrays in hours since each patient's monitoring origin, using `+inf` for no alert. `shared_onset`, `lead_windows` and `onset_location` take the unchanged primary-evaluable event subset with one column per policy; `right_endpoint_reference` takes the full cohort and its original event/evaluability masks. `alert_concordance` accepts a chosen frozen population. These functions return aggregates without loading clinical files. Follow the S1 README for its distinct nanosecond timeline interface and landmark policy semantics.
+
+No patient-level clinical data, derived scores, alert times or trajectories are distributed. Complete reproduction of restricted clinical analyses still requires authorized data access and the corresponding local preparation. No tests, bootstrap runs, simulations, model training, threshold selection or clinical TEST analyses were rerun for this release; the included synthetic test files are source artifacts only.
 
 ## Tests
 

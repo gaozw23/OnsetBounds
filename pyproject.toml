@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "onsetbounds"
-version = "1.0.0"
+version = "1.1.0"
 description = "Sharp performance bounds with interval-uncertain event onset"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
@@ -13,6 +13,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+revision = ["pandas>=2.3,<2.4", "scipy>=1.18,<1.19"]
 simulation = ["pandas>=2.3,<2.4", "matplotlib>=3.11,<3.12", "PyYAML>=6.0,<6.1"]
 real-data = ["pandas>=2.3,<2.4", "scipy>=1.18,<1.19", "scikit-learn>=1.9,<1.10", "xgboost>=3.3,<3.4", "PyYAML>=6.0,<6.1"]
 dev = ["pytest>=9.1,<9.2"]

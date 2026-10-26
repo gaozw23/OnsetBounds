@@ -1,0 +1,723 @@
+{
+  "version": "A1_RAW_ALIGNED_v1.2_RANDOM_HOSPITALS",
+  "cells": [
+    {
+      "id": "P_A_w6_uniform_k0",
+      "scenario": "A",
+      "scheme": "patient",
+      "width": 6.0,
+      "location": "uniform",
+      "kappa": 0.0,
+      "tau": 0.0,
+      "index": 1,
+      "lead_means": [
+        15.0,
+        9.0,
+        12.0
+      ],
+      "lead_sds": [
+        4.0,
+        5.0,
+        4.5
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_A_w6_uniform_k0.5",
+      "scenario": "A",
+      "scheme": "patient",
+      "width": 6.0,
+      "location": "uniform",
+      "kappa": 0.5,
+      "tau": 0.0,
+      "index": 2,
+      "lead_means": [
+        15.0,
+        9.0,
+        12.0
+      ],
+      "lead_sds": [
+        4.0,
+        5.0,
+        4.5
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_A_w6_right_k0",
+      "scenario": "A",
+      "scheme": "patient",
+      "width": 6.0,
+      "location": "right",
+      "kappa": 0.0,
+      "tau": 0.0,
+      "index": 3,
+      "lead_means": [
+        15.0,
+        9.0,
+        12.0
+      ],
+      "lead_sds": [
+        4.0,
+        5.0,
+        4.5
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_A_w6_right_k0.5",
+      "scenario": "A",
+      "scheme": "patient",
+      "width": 6.0,
+      "location": "right",
+      "kappa": 0.5,
+      "tau": 0.0,
+      "index": 4,
+      "lead_means": [
+        15.0,
+        9.0,
+        12.0
+      ],
+      "lead_sds": [
+        4.0,
+        5.0,
+        4.5
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_A_w24_uniform_k0",
+      "scenario": "A",
+      "scheme": "patient",
+      "width": 24.0,
+      "location": "uniform",
+      "kappa": 0.0,
+      "tau": 0.0,
+      "index": 5,
+      "lead_means": [
+        15.0,
+        9.0,
+        12.0
+      ],
+      "lead_sds": [
+        4.0,
+        5.0,
+        4.5
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_A_w24_uniform_k0.5",
+      "scenario": "A",
+      "scheme": "patient",
+      "width": 24.0,
+      "location": "uniform",
+      "kappa": 0.5,
+      "tau": 0.0,
+      "index": 6,
+      "lead_means": [
+        15.0,
+        9.0,
+        12.0
+      ],
+      "lead_sds": [
+        4.0,
+        5.0,
+        4.5
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_A_w24_right_k0",
+      "scenario": "A",
+      "scheme": "patient",
+      "width": 24.0,
+      "location": "right",
+      "kappa": 0.0,
+      "tau": 0.0,
+      "index": 7,
+      "lead_means": [
+        15.0,
+        9.0,
+        12.0
+      ],
+      "lead_sds": [
+        4.0,
+        5.0,
+        4.5
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_A_w24_right_k0.5",
+      "scenario": "A",
+      "scheme": "patient",
+      "width": 24.0,
+      "location": "right",
+      "kappa": 0.5,
+      "tau": 0.0,
+      "index": 8,
+      "lead_means": [
+        15.0,
+        9.0,
+        12.0
+      ],
+      "lead_sds": [
+        4.0,
+        5.0,
+        4.5
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_C_w6_uniform_k0",
+      "scenario": "C",
+      "scheme": "patient",
+      "width": 6.0,
+      "location": "uniform",
+      "kappa": 0.0,
+      "tau": 0.0,
+      "index": 9,
+      "lead_means": [
+        13.0,
+        12.0,
+        12.5
+      ],
+      "lead_sds": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_C_w6_uniform_k0.5",
+      "scenario": "C",
+      "scheme": "patient",
+      "width": 6.0,
+      "location": "uniform",
+      "kappa": 0.5,
+      "tau": 0.0,
+      "index": 10,
+      "lead_means": [
+        13.0,
+        12.0,
+        12.5
+      ],
+      "lead_sds": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_C_w6_right_k0",
+      "scenario": "C",
+      "scheme": "patient",
+      "width": 6.0,
+      "location": "right",
+      "kappa": 0.0,
+      "tau": 0.0,
+      "index": 11,
+      "lead_means": [
+        13.0,
+        12.0,
+        12.5
+      ],
+      "lead_sds": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_C_w6_right_k0.5",
+      "scenario": "C",
+      "scheme": "patient",
+      "width": 6.0,
+      "location": "right",
+      "kappa": 0.5,
+      "tau": 0.0,
+      "index": 12,
+      "lead_means": [
+        13.0,
+        12.0,
+        12.5
+      ],
+      "lead_sds": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_C_w24_uniform_k0",
+      "scenario": "C",
+      "scheme": "patient",
+      "width": 24.0,
+      "location": "uniform",
+      "kappa": 0.0,
+      "tau": 0.0,
+      "index": 13,
+      "lead_means": [
+        13.0,
+        12.0,
+        12.5
+      ],
+      "lead_sds": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_C_w24_uniform_k0.5",
+      "scenario": "C",
+      "scheme": "patient",
+      "width": 24.0,
+      "location": "uniform",
+      "kappa": 0.5,
+      "tau": 0.0,
+      "index": 14,
+      "lead_means": [
+        13.0,
+        12.0,
+        12.5
+      ],
+      "lead_sds": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_C_w24_right_k0",
+      "scenario": "C",
+      "scheme": "patient",
+      "width": 24.0,
+      "location": "right",
+      "kappa": 0.0,
+      "tau": 0.0,
+      "index": 15,
+      "lead_means": [
+        13.0,
+        12.0,
+        12.5
+      ],
+      "lead_sds": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "P_C_w24_right_k0.5",
+      "scenario": "C",
+      "scheme": "patient",
+      "width": 24.0,
+      "location": "right",
+      "kappa": 0.5,
+      "tau": 0.0,
+      "index": 16,
+      "lead_means": [
+        13.0,
+        12.0,
+        12.5
+      ],
+      "lead_sds": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "H_A_w6_tau0",
+      "scenario": "A",
+      "scheme": "hospital",
+      "width": 6.0,
+      "location": "uniform",
+      "kappa": 0.5,
+      "tau": 0.0,
+      "index": 17,
+      "lead_means": [
+        15.0,
+        9.0,
+        12.0
+      ],
+      "lead_sds": [
+        4.0,
+        5.0,
+        4.5
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "H_A_w6_tau0.5",
+      "scenario": "A",
+      "scheme": "hospital",
+      "width": 6.0,
+      "location": "uniform",
+      "kappa": 0.5,
+      "tau": 0.5,
+      "index": 18,
+      "lead_means": [
+        15.0,
+        9.0,
+        12.0
+      ],
+      "lead_sds": [
+        4.0,
+        5.0,
+        4.5
+      ],
+      "policy_group": "tau0.5"
+    },
+    {
+      "id": "H_A_w24_tau0",
+      "scenario": "A",
+      "scheme": "hospital",
+      "width": 24.0,
+      "location": "uniform",
+      "kappa": 0.5,
+      "tau": 0.0,
+      "index": 19,
+      "lead_means": [
+        15.0,
+        9.0,
+        12.0
+      ],
+      "lead_sds": [
+        4.0,
+        5.0,
+        4.5
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "H_A_w24_tau0.5",
+      "scenario": "A",
+      "scheme": "hospital",
+      "width": 24.0,
+      "location": "uniform",
+      "kappa": 0.5,
+      "tau": 0.5,
+      "index": 20,
+      "lead_means": [
+        15.0,
+        9.0,
+        12.0
+      ],
+      "lead_sds": [
+        4.0,
+        5.0,
+        4.5
+      ],
+      "policy_group": "tau0.5"
+    },
+    {
+      "id": "H_C_w6_tau0",
+      "scenario": "C",
+      "scheme": "hospital",
+      "width": 6.0,
+      "location": "uniform",
+      "kappa": 0.5,
+      "tau": 0.0,
+      "index": 21,
+      "lead_means": [
+        13.0,
+        12.0,
+        12.5
+      ],
+      "lead_sds": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "H_C_w6_tau0.5",
+      "scenario": "C",
+      "scheme": "hospital",
+      "width": 6.0,
+      "location": "uniform",
+      "kappa": 0.5,
+      "tau": 0.5,
+      "index": 22,
+      "lead_means": [
+        13.0,
+        12.0,
+        12.5
+      ],
+      "lead_sds": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "policy_group": "tau0.5"
+    },
+    {
+      "id": "H_C_w24_tau0",
+      "scenario": "C",
+      "scheme": "hospital",
+      "width": 24.0,
+      "location": "uniform",
+      "kappa": 0.5,
+      "tau": 0.0,
+      "index": 23,
+      "lead_means": [
+        13.0,
+        12.0,
+        12.5
+      ],
+      "lead_sds": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "policy_group": "tau0"
+    },
+    {
+      "id": "H_C_w24_tau0.5",
+      "scenario": "C",
+      "scheme": "hospital",
+      "width": 24.0,
+      "location": "uniform",
+      "kappa": 0.5,
+      "tau": 0.5,
+      "index": 24,
+      "lead_means": [
+        13.0,
+        12.0,
+        12.5
+      ],
+      "lead_sds": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "policy_group": "tau0.5"
+    }
+  ],
+  "policies": {
+    "tau0": {
+      "group": "tau0",
+      "tau": 0.0,
+      "event_intercept": -2.197224577336219,
+      "thresholds": [
+        1.4287202626212059,
+        1.4238065481089281,
+        1.4262025795965578
+      ],
+      "pilot_seed": [
+        20261025021,
+        0,
+        0
+      ],
+      "validation_seed": [
+        20261025021,
+        0,
+        1
+      ],
+      "pilot_patients": 200000,
+      "pilot_non_events": 180078,
+      "validation_patients": 100000,
+      "validation_event_rate": 0.10039,
+      "validation_non_event_alert_rates": [
+        0.10034348217560943,
+        0.10022120696746367,
+        0.09953201943064217
+      ],
+      "calibration_target_event_prevalence": 0.1,
+      "calibration_target_non_event_alert_rate": 0.1,
+      "event_intercept_method": "80-node Gaussian quadrature; random-effect marginal mean",
+      "threshold_method": "independent patient-marginal synthetic pilot conditional D=0; sizes independent of random effect so same hospital patient marginal",
+      "source": "pre-coverage independent pilot; no MC coverage consulted"
+    },
+    "tau0.5": {
+      "group": "tau0.5",
+      "tau": 0.5,
+      "event_intercept": -2.295002196020315,
+      "thresholds": [
+        1.4585339301809153,
+        1.4563034996703934,
+        1.4561288970413202
+      ],
+      "pilot_seed": [
+        20261025021,
+        1,
+        0
+      ],
+      "validation_seed": [
+        20261025021,
+        1,
+        1
+      ],
+      "pilot_patients": 200000,
+      "pilot_non_events": 180028,
+      "validation_patients": 100000,
+      "validation_event_rate": 0.09841,
+      "validation_non_event_alert_rates": [
+        0.0972171386106767,
+        0.10063332556927207,
+        0.09991237702281525
+      ],
+      "calibration_target_event_prevalence": 0.1,
+      "calibration_target_non_event_alert_rate": 0.1,
+      "event_intercept_method": "80-node Gaussian quadrature; random-effect marginal mean",
+      "threshold_method": "independent patient-marginal synthetic pilot conditional D=0; sizes independent of random effect so same hospital patient marginal",
+      "source": "pre-coverage independent pilot; no MC coverage consulted"
+    }
+  },
+  "plans": {
+    "budget": {
+      "cell_ids": [
+        "P_A_w6_uniform_k0",
+        "P_A_w6_right_k0.5",
+        "P_A_w24_uniform_k0",
+        "P_A_w24_right_k0.5",
+        "P_C_w6_uniform_k0",
+        "P_C_w6_right_k0.5",
+        "P_C_w24_uniform_k0",
+        "P_C_w24_right_k0.5",
+        "H_A_w6_tau0.5",
+        "H_A_w24_tau0.5",
+        "H_C_w6_tau0.5",
+        "H_C_w24_tau0.5"
+      ],
+      "MC": 300,
+      "B": 999,
+      "anchor_MC": 100,
+      "anchor_B": 5000,
+      "anchor_cell_ids": [
+        "P_A_w6_uniform_k0",
+        "P_C_w24_right_k0.5",
+        "H_A_w6_tau0.5",
+        "H_C_w24_tau0.5"
+      ]
+    },
+    "extended": {
+      "cell_ids": [
+        "P_A_w6_uniform_k0",
+        "P_A_w6_uniform_k0.5",
+        "P_A_w6_right_k0",
+        "P_A_w6_right_k0.5",
+        "P_A_w24_uniform_k0",
+        "P_A_w24_uniform_k0.5",
+        "P_A_w24_right_k0",
+        "P_A_w24_right_k0.5",
+        "P_C_w6_uniform_k0",
+        "P_C_w6_uniform_k0.5",
+        "P_C_w6_right_k0",
+        "P_C_w6_right_k0.5",
+        "P_C_w24_uniform_k0",
+        "P_C_w24_uniform_k0.5",
+        "P_C_w24_right_k0",
+        "P_C_w24_right_k0.5",
+        "H_A_w6_tau0",
+        "H_A_w6_tau0.5",
+        "H_A_w24_tau0",
+        "H_A_w24_tau0.5",
+        "H_C_w6_tau0",
+        "H_C_w6_tau0.5",
+        "H_C_w24_tau0",
+        "H_C_w24_tau0.5"
+      ],
+      "MC": 500,
+      "B": 1999,
+      "anchor_MC": 200,
+      "anchor_B": 5000,
+      "anchor_cell_ids": [
+        "P_A_w6_uniform_k0",
+        "P_C_w24_right_k0.5",
+        "H_A_w6_tau0.5",
+        "H_C_w24_tau0.5"
+      ]
+    }
+  },
+  "oracle": {
+    "max_mcse": 0.001,
+    "patient_batch": 20000,
+    "hospital_batch": 100,
+    "patient_min_units": 500000,
+    "hospital_min_units": 2000,
+    "patient_max_units": 8000000,
+    "hospital_max_units": 80000,
+    "stop_rule": "first complete batch meeting independent-unit delta MCSE threshold after minimum size; never uses MC coverage"
+  },
+  "inference": {
+    "primary_validity": "clinical_shared",
+    "sensitivity_validity": "target_specific",
+    "quantile": 0.95,
+    "quantile_method": "linear",
+    "minimum_valid_fraction": 0.95,
+    "batch_size": 16,
+    "BLAS_threads": 1,
+    "max_workers": 2
+  },
+  "seeds": {
+    "calibration": 20261025021,
+    "oracle": 20261025022,
+    "MC": 20261025023,
+    "bootstrap": 20261025024
+  },
+  "cell_defaults": {
+    "n": 2000,
+    "hospital_count": 40,
+    "hospital_sizes": [
+      50,
+      58,
+      65,
+      73,
+      81,
+      88,
+      96,
+      104,
+      112,
+      119,
+      127,
+      135,
+      142,
+      150,
+      158,
+      165,
+      173,
+      181,
+      188,
+      196,
+      204,
+      212,
+      219,
+      227,
+      235,
+      242,
+      250,
+      258,
+      265,
+      273,
+      281,
+      288,
+      296,
+      304,
+      312,
+      319,
+      327,
+      335,
+      342,
+      350
+    ],
+    "hospital_size_mode": "iid_discrete_support",
+    "rho": 0.6,
+    "event_prevalence": 0.1,
+    "non_event_alert_rate": 0.1,
+    "early_event_fraction": 0.2,
+    "event_risk_shift": 2.0
+  }
+}

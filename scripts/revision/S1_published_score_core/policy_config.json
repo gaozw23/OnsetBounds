@@ -1,0 +1,18 @@
+{
+  "policies": {
+    "published_numerical_landmark": 0.15,
+    "exploratory_validation_selected": 0.07612999463945859
+  },
+  "exploratory_threshold_hex": "0x1.37d415d389bf9p-4",
+  "comparison": ">",
+  "lead_hours": [
+    6,
+    24
+  ],
+  "t0_hours_after_ICU": 24,
+  "maximum_hours_after_ICU": 168,
+  "score_origin": "Independent landmark episode; hospital replay supplies history and absorbing stop, not landmark first alert",
+  "target": "Fixed local2*C0 crossing; C0 from eligible first24h observations available by t0",
+  "unknown_race": "Unknown, OTHER and ethnicity-only labels are not non-Black",
+  "patient_outcomes_or_scores_included": false
+}

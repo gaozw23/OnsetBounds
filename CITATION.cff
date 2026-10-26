@@ -9,6 +9,6 @@ authors:
   - family-names: Sun
     given-names: Weipeng
     affiliation: "School of Mathematics, Jilin University"
-version: 1.0.0
-date-released: 2026-08-24
+version: 1.1.0
+date-released: 2026-10-26
 repository-code: "https://github.com/gaozw23/OnsetBounds"
